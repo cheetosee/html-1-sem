@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+}
+.container{
+    text-align: center;
+    display: block;
+}
+.container div{
+    width: 300px;
+    height: 168px;
+    background-size: cover;
+    border: 4px inset rgb(168, 168, 168);
+    margin: 110px;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+h2{
+    text-align: center;
+    font-family: Tahoma;
+    font-weight: 900;
+    font-size: 24px;
+    color: rgb(65, 65, 65);
+    animation-name: anime;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes anime {
+    0% {
+    color: rgb(65, 65, 65);
+    }
+    100% {
+    color: rgba(65, 65, 65, 0); 
+    }
+}
+
+.box1{
+    background-image: url(img/kart4.jpg);
+    animation-name: transX;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.box2{
+    background-image: url(img/kart5.jpg);
+    animation-name: transY;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.box3{
+    background-image: url(img/kart2.jpg);
+    animation-name: transXY;
+    animation-duration: 10s;
+    animation-timing-function: cubic-bezier(0.38, -0.55, 0.25, 1.55);
+    animation-iteration-count: infinite;
+}
+.box4{
+    background-image: url(img/kart7.jpg);
+    animation-name: square;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes transX {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 200px;
+    }
+}
+@keyframes transY {
+    0%{
+        bottom: 0;
+    }
+    100%{
+        bottom: 200px;
+    }
+}
+@keyframes transXY {
+    0%{
+        top: 0; left: 0;
+    }
+    30%{
+        top: 100px; left: 50px;
+    }
+    50%{
+        top: 20px; left: 500px;
+    }
+    80%{
+        top: 10px; right: 100px;
+    }
+    100%{
+        top: 0; left: 0;
+    }
+}
+@keyframes square{
+    0% {
+        left: 0; top: 0; 
+    }
+    25% {
+        left: 200px; top: 0; 
+    }
+    50% {
+        left: 200px; top: 200px; 
+    }
+    75% {
+        left: 0; top: 200px; 
+    }
+    100% { 
+        left: 0; top: 0; 
+    }	
+
+}

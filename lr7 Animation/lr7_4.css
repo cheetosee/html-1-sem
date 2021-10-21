@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+}
+.container{
+    text-align: center;
+}
+.container div{
+    width: 300px;
+    height: 168px;
+    background-size: cover;
+    border: 4px inset rgb(168, 168, 168);
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    animation-name: backg;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;    
+}
+
+h2{
+    text-align: center;
+    font-family: Tahoma;
+    font-weight: 900;
+    font-size: 24px;
+    color: rgb(65, 65, 65);
+    animation-name: anime;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes anime {
+    0% {
+    color: rgb(65, 65, 65);
+    }
+    100% {
+    color: rgba(65, 65, 65, 0); 
+    }
+}
+@keyframes backg {
+    0%{
+        background-image: url(img/kart9.jpg);
+    }
+    20%{
+        background-image: url(img/kart10.jpg);
+    }
+    40%{
+        background-image: url(img/kart11.jpg);
+
+    }
+    60%{
+        background-image: url(img/kart12.jpg);
+
+    }
+    80%{
+        background-image: url(img/kart6.jpg);
+    }
+    100%{
+        background-image: url(img/kart9.jpg);
+    }
+    
+}

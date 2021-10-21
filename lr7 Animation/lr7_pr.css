@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    background-color: #09282b;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 200px;
+    position: relative;
+    animation-name: anime;
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-direction: normal;
+}
+@keyframes anime {
+    0%{
+        left: 0; background-color: red;border-radius: 50px;
+    }
+    20%{
+        left: 800px; background-color: yellow;border-radius: 0px;
+    }
+    60%{
+        left: 200px;  background-color: green; border-radius: 50px;
+    }
+    80%{
+        left: 1000px; background-color: blue;border-radius: 0px;
+    }
+    100%{
+        left: 0; background-color: blueviolet;border-radius: 50px;
+    }
+}
+
+.box:hover{
+    animation-play-state: paused;
+}
